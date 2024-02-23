@@ -75,7 +75,7 @@ describe('addLastName function', () => {
     //ACT
     const result = functions.addLastName(a);
     //ASSERT
-    expect(result).toEqual("Pepito Perez");
+    expect(result.lastname).toEqual("Perez");
  });
   it('should be return Pepito when I sent Null', () => {
     //ARRANGE
@@ -83,6 +83,6 @@ describe('addLastName function', () => {
      //ACT
       const result = functions.addLastName(a);
      //ASSERT
-     expect(result).toEqual("Pepito");
-  });
+     expect(result.lastname).toBeNull();
+   });
 });
